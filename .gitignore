@@ -61,6 +61,11 @@ sysinfo.txt
 *.unitypackage
 *.app
 
+## Peek
+Assets/Ludiq/Ludiq.PeekCore
+Assets/Ludiq/Ludiq.Peek
+Assets/Ludiq.Generated/Transient
+
 # Crashlytics generated file
 crashlytics-build.properties
 
