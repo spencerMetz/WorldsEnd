@@ -14,6 +14,8 @@ public class InputManager : MonoBehaviour
 
     private void Awake()
     {
+        Cursor.visible = false;
+
         controller = new PlayerControls();
         groundMovement = controller.GroundMovement;
 

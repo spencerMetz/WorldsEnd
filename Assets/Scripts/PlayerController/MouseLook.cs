@@ -9,7 +9,9 @@ public class MouseLook : MonoBehaviour
 
     [SerializeField] 
     float sensitivityX = 8f, sensitivityY = 6f;
+
     float mouseX, mouseY;
+
     float xRotation = 0f;
     
     private void Update()
@@ -26,7 +28,7 @@ public class MouseLook : MonoBehaviour
 
     public void SetInput(Vector2 mouseInput)
     {
-        mouseX = mouseInput.x * sensitivityX;
+        mouseX = mouseInput.x * sensitivityX * 2;
         mouseY = mouseInput.y * sensitivityY;
     }
 }

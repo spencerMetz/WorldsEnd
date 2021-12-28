@@ -8,7 +8,7 @@ public class Movement : MonoBehaviour
     [SerializeField] LayerMask groundMask;
 
     [SerializeField] 
-    float speed = 1.0f, jumpHeight = 3.5f, gravity = -30f; //-9.81
+    float speed = 10.0f, jumpHeight = 3.5f, gravity = -30f; //-9.81
 
     Vector2 horizontalInput;
     Vector3 verticalVelocity = Vector3.zero;
