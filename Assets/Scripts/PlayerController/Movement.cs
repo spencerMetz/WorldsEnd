@@ -28,7 +28,6 @@ public class Movement : MonoBehaviour
         //Jump: V = sqrt(-2 * jumpHeight * gravity)
         if (jump && isGrounded)
         {
-            Debug.LogWarning("Jump");
             verticalVelocity.y = Mathf.Sqrt(-2f * jumpHeight * gravity);
 
             jump = false;
