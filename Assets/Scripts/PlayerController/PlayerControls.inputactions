@@ -14,14 +14,6 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Jump",
-                    "type": "PassThrough",
-                    "id": "5b4bf3be-acd0-4f90-9a9b-056109747c07",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
                     "name": "MouseX",
                     "type": "PassThrough",
                     "id": "6e1f42fd-823f-439c-8632-efccfa4cc5c1",
@@ -34,6 +26,30 @@
                     "type": "PassThrough",
                     "id": "54aae51c-ebfc-4d60-a6d3-033caf96b587",
                     "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Jump",
+                    "type": "PassThrough",
+                    "id": "5b4bf3be-acd0-4f90-9a9b-056109747c07",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Sprint",
+                    "type": "PassThrough",
+                    "id": "1548eeec-eed5-400f-bb8d-799f9844d7ea",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Crouch",
+                    "type": "Button",
+                    "id": "984cb15c-383a-4b28-a4a1-9d97291fa654",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
                 }
@@ -96,17 +112,6 @@
                 },
                 {
                     "name": "",
-                    "id": "8168083f-eec1-44e6-bc48-71e652154db4",
-                    "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Jump",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "785575a4-c931-40cf-9481-37fb603d966c",
                     "path": "<Mouse>/delta/x",
                     "interactions": "",
@@ -124,6 +129,39 @@
                     "processors": "",
                     "groups": "",
                     "action": "MouseY",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4a26beae-7a5c-4bfd-b616-f9d0e05da529",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Sprint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "041573c4-82ca-46c8-a402-cd78968d53b2",
+                    "path": "<Keyboard>/ctrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Crouch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8168083f-eec1-44e6-bc48-71e652154db4",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
