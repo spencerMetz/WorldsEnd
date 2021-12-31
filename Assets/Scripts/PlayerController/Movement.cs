@@ -33,6 +33,7 @@ public class Movement : MonoBehaviour
             jump = false;
         }
 
+
         verticalVelocity.y += gravity * Time.deltaTime;
         controller.Move(verticalVelocity * Time.deltaTime);
     }
@@ -45,5 +46,10 @@ public class Movement : MonoBehaviour
     public void onJumpPressed()
     {
         jump = true;
+    }
+
+    public void onSprintPressed()
+    {
+        horizontalInput = horizontalInput * 3.0f;
     }
 }

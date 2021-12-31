@@ -1,5 +1,7 @@
 
+using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class InputManager : MonoBehaviour
 {
@@ -11,6 +13,9 @@ public class InputManager : MonoBehaviour
 
     Vector2 horizontalInput;
     Vector2 mouseInput;
+    
+
+    bool isSprintPressed;
 
     private void Awake()
     {
@@ -26,6 +31,14 @@ public class InputManager : MonoBehaviour
 
         groundMovement.MouseX.performed += ctx => mouseInput.x = ctx.ReadValue<float>();
         groundMovement.MouseY.performed += ctx => mouseInput.y = ctx.ReadValue<float>();
+
+        groundMovement.Sprint.started += onSprint;
+        groundMovement.Sprint.canceled += onSprint;
+    }
+
+    private void onSprint(InputAction.CallbackContext context)
+    {
+        isSprintPressed = context.ReadValueAsButton();
     }
 
     private void Update()
